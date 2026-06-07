@@ -1,7 +1,16 @@
 game snake
 
+How to run -
+feature disabled:
+./snake
+
+feature enabled:
+./snake HelpMeWin
+
+
+
 new feaaure:
-add Help Me Win - flag in main
+add Help Me Win - flag in main (called HelpMeWin)
 
 documentation
 add new flag as main arg to enbale the feature
