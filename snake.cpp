@@ -203,6 +203,7 @@ void Snake::calculateAndPrintPreview()//new
         previewSteps.push_back({tempX, tempY});
     }
 
+    //display the cord for debugging (without the check food_eaten)!!
     cout << "\033[32m" << endl;
 
     cout << "snake_head: " << snake_head.first << " " << snake_head.second << endl;
@@ -213,12 +214,13 @@ void Snake::calculateAndPrintPreview()//new
     }
     cout << "\033[0m" << endl;
     
-    sleep(3);
+    sleep(1);
+    /////////////////////////////////////////////////////////////////////
 }
 
 void Snake::handlePreview() //new
 {    
-    if (/*food_eaten &&*/ bHelpMeWin) // TODO: remove food_eaten for debugging
+    if (bHelpMeWin) // TODO: remove food_eaten for debugging
     {
         calculateAndPrintPreview();
     }
